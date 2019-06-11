@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/2turu/Animal-Crossing-Web-App#readme",
   "dependencies": {
+    "dotenv": "^6.2.0",
+    "eslint": "^5.16.0",
     "hapi": "^18.1.0"
   }
 }
