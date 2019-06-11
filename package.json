@@ -4,6 +4,10 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
+    "build": "parcel build client/index.js",
+    "dev:start": "npm-run-all build start",
+    "dev": "nodemon --watch client --watch src -e js,ejs,sql,vue,css --exec npm run dev:start",
+    "start": "node .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,16 +22,34 @@
   },
   "homepage": "https://github.com/2turu/Animal-Crossing-Web-App#readme",
   "dependencies": {
+    "axios": "^0.18.1",
+    "bell": "^9.5.0",
+    "boom": "^7.3.0",
     "dotenv": "^6.2.0",
+    "ejs": "^2.6.1",
     "fs-extra": "^7.0.1",
     "hapi": "^18.1.0",
+    "hapi-auth-cookie": "^9.1.0",
+    "inert": "^5.1.3",
     "install": "^0.12.2",
+    "luxon": "^1.16.0",
+    "materialize-css": "^1.0.0",
+    "moment": "^2.24.0",
     "mssql": "^4.3.7",
     "npm": "^6.9.0",
-    "twitch-js": "^1.2.17"
+    "twitch-js": "^1.2.17",
+    "vision": "^5.4.4",
+    "vue": "^2.6.10",
+    "vue-datetime": "^1.0.0-beta.10",
+    "weekstart": "^1.0.0"
   },
   "devDependencies": {
+    "@vue/component-compiler-utils": "^2.6.0",
     "eslint": "^5.16.0",
-    "eslint-plugin-react": "^7.13.0"
+    "eslint-plugin-react": "^7.13.0",
+    "nodemon": "^1.19.1",
+    "npm-run-all": "^4.1.5",
+    "parcel-bundler": "^1.12.3",
+    "vue-template-compiler": "^2.6.10"
   }
 }
