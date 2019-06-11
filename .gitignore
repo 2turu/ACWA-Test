@@ -1,4 +1,13 @@
-/node_modules
-.env
 package-lock.json
 /.cache
+node_modules
+config.*.json
+config.json
+.DS_Store
+.vscode
+.cache
+logs
+*.log
+npm-debug.log*
+.env
+dist/
