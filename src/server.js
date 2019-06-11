@@ -12,7 +12,7 @@ const app = async config => {
 
    // store the config for later use
    server.app.config = config;
-   
+
    // register plugins
    await plugins.register( server );
 

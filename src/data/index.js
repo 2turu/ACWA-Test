@@ -4,17 +4,17 @@ const events = require( "./events" );
 const sql = require( "mssql" );
 
 const client = async ( server, config ) => {
-   let pool = null;
+    let pool = null;
 
-   const closePool = async () => {
-       try {
+    const closePool = async () => {
+        try {
            // try to close the connection pool
            await pool.close();
 
            // set the pool to null to ensure
            // a new one will be created by getConnection()
            pool = null;
-       } catch ( err ) {
+        } catch ( err ) {
            // error closing the connection (could already be closed)
            // set the pool to null to ensure
            // a new one will be created by getConnection()

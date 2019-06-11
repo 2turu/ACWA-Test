@@ -19,12 +19,15 @@
   "homepage": "https://github.com/2turu/Animal-Crossing-Web-App#readme",
   "dependencies": {
     "dotenv": "^6.2.0",
-    "eslint": "^5.16.0",
     "fs-extra": "^7.0.1",
     "hapi": "^18.1.0",
     "install": "^0.12.2",
     "mssql": "^4.3.7",
     "npm": "^6.9.0",
     "twitch-js": "^1.2.17"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-plugin-react": "^7.13.0"
   }
 }
